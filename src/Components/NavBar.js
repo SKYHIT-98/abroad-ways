@@ -2,19 +2,18 @@ import React, { Fragment } from "react";
 import Logo from "../assets/img/logo.png";
 import Modal from "react-modal";
 import ContactForm from "../Components/ContactForm";
-import IconButton from '@material-ui/core/IconButton';
-import Menu from '@material-ui/core/Menu';
-import MenuItem from '@material-ui/core/MenuItem';
-import MoreVertIcon from '@material-ui/icons/MoreVert';
+import IconButton from "@material-ui/core/IconButton";
+import Menu from "@material-ui/core/Menu";
+import MenuItem from "@material-ui/core/MenuItem";
+import MoreVertIcon from "@material-ui/icons/MoreVert";
 
 const options = [
-  {name:"Home",link:"/"},
-  {name:"Coaching",link:"/coaching"},
-  {name:"Country",link:"/country"},
-  {name:"Visa",link:"/visa"},
-  {name:"About Us",link:"/about"},
-  {name:"ContactUs",link:"/contactUs"},
-
+  { name: "Home", link: "/" },
+  { name: "Coaching", link: "/coaching" },
+  { name: "Country", link: "/country" },
+  { name: "Visa", link: "/visa" },
+  { name: "About Us", link: "/about" },
+  { name: "ContactUs", link: "/contactUs" }
 ];
 const ITEM_HEIGHT = 48;
 
@@ -40,8 +39,6 @@ export default function App() {
   const handleClose = () => {
     setAnchorEl(null);
   };
- 
-  
 
   return (
     <header id="header" className="fixed-top">
@@ -50,52 +47,44 @@ export default function App() {
           <a className="mr-auto" href="/">
             <img src={Logo} alt="Abroad Way" />
           </a>
-          
-     
         </div>
         <IconButton
-        aria-label="more"
-        aria-controls="long-menu"
-        aria-haspopup="true"
-        onClick={handleClick}
-        className="d-lg-none"
-      >
-        <MoreVertIcon />
-      </IconButton>
+          aria-label="more"
+          aria-controls="long-menu"
+          aria-haspopup="true"
+          onClick={handleClick}
+          className="d-lg-none"
+        >
+          <MoreVertIcon />
+        </IconButton>
         <Menu
-        id="long-menu"
-        anchorEl={anchorEl}
-        keepMounted
-        open={open}
-        onClose={handleClose}
-        PaperProps={{
-          style: {
-            maxHeight: ITEM_HEIGHT * 4.5,
-            width: 200,
-          },
-        }}
-      >
-        {options.map(option => (
-          <MenuItem className="nav-menu" key={option} selected={option === 'Home'}>
-            <ul> <li className="active">
-              <a href={option.link}>{option.name}</a>
-            </li>
-           
-            </ul>
-            
-          </MenuItem>
-         
-
-        ))}
-         <MenuItem className="nav-menu">
-          <ul> <li className="get-started">
-              <a onClick={openModal}>Get Started</a>
-            </li>
-         
-          </ul>
-          
-        </MenuItem>
-      </Menu>
+          id="long-menu"
+          anchorEl={anchorEl}
+          keepMounted
+          open={open}
+          onClose={handleClose}
+          PaperProps={{
+            style: {
+              maxHeight: ITEM_HEIGHT * 4.5,
+              width: 200
+            }
+          }}
+        >
+          {options.map(option => (
+            <MenuItem
+              className="nav-menu"
+              key={option}
+              selected={option === "Home"}
+            >
+              <ul>
+                {" "}
+                <li className="active">
+                  <a href={option.link}>{option.name}</a>
+                </li>
+              </ul>
+            </MenuItem>
+          ))}
+  s      </Menu>
         <nav className="nav-menu d-none d-lg-block">
           <ul>
             <li className="active">
