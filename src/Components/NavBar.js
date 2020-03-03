@@ -84,7 +84,7 @@ export default function App() {
               </ul>
             </MenuItem>
           ))}
-  s      </Menu>
+    </Menu>
         <nav className="nav-menu d-none d-lg-block">
           <ul>
             <li className="active">
