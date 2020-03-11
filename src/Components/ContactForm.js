@@ -25,13 +25,13 @@ class ContactForm extends Component {
                         </div>
                       
                         <div class="row row-space">
-                            <div class="col-lg-6 col-sm-12">
+                            <div class="col-lg-12 col-sm-12">
                                 <div class="input-group">
                                     <label class="label">Email</label>
                                     <input class="input--style-4" type="email" name="email" />
                                 </div>
                             </div>
-                            <div class="col-lg-6 col-sm-12">
+                            <div class="col-lg-12 col-sm-12">
                                 <div class="input-group">
                                     <label class="label">Phone Number</label>
                                     <input class="input--style-4" type="text" name="phone" />

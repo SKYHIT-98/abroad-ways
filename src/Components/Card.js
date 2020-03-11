@@ -10,7 +10,7 @@ class Card extends Component {
     render() {
         return (
             <div
-            className="col-md-6 col-lg-4 d-flex align-items-stretch aos-init aos-animate"
+            className="col-md-6 col-lg-4 d-flex align-items-stretch aos-init aos-animate pointer"
             data-aos="zoom-in"
             data-aos-delay="300"
           >

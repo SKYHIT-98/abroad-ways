@@ -107,7 +107,7 @@ export default function App() {
               <a href="/contact">Contact Us</a>
             </li>
 
-            <li className="get-started">
+            <li className="get-started pointer">
               <a onClick={openModal}>Get Started</a>
             </li>
           </ul>

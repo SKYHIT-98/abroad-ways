@@ -14,11 +14,11 @@ class JobSeeker extends Component {
   <div class="container">
     <div class="row">
       <div class="col-lg-12">
-      <a href="#apply" class="btn-get-started col-lg-2 float-right">APPLY NOW</a>
 
-      <div class="row">
+      <div class="d-flex justify-content-between">
         <h3 class="font-tertiary mb-5 col-lg-8">What should be the proper purpose of UI and UX design?</h3>
-       
+        <a href="#apply" class="btn-get-started float-right" style={{height: "50%"}}>APPLY NOW</a>
+
         </div>
         <div class="content">
           <img src={Img} width="400" height="400" alt="post-thumb" class="img-fluid rounded float-left mr-5 mb-4" />

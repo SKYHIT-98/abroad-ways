@@ -8,7 +8,7 @@ class Footer extends Component {
           <div className="copyright">
             © Copyright 
             <strong>
-              <span> SKYHIT</span>
+              <span> Abroad ways</span>
             </strong>
             . All Rights Reserved
           </div>

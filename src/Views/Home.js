@@ -28,14 +28,14 @@ class Home extends React.Component {
           </div>
         </section>
         <section id="services" className="services section-bg">
-          <div className="container">
+          <div className="container my-4">
             <div className="section-title aos-init aos-animate" data-aos="fade-up">
-              <h1>Immigration - Choose your country!</h1>
-              <h3>
+              <h1 style={{padding: 20}}>Immigration - Choose your country!</h1>
+              <h4>
                 Suspendisse non commodo uspendisse sodales viverra fermenec
                 aliquam ultricies justo, eget ornare augue volutpat idsed
                 gravida sapien suscipit .
-              </h3>
+              </h4>
             </div>
 
             <div className="row">
@@ -49,7 +49,7 @@ class Home extends React.Component {
                     <i className="bx bxl-dribbble"></i>
                   </div>
                   <h4 className="title">
-                    <a href="">Lorem Ipsum</a>
+                    <a href="">United Kingdom</a>
                   </h4>
                   <p className="description">
                     Voluptatum deleniti atque corrupti quos dolores et quas
@@ -68,7 +68,7 @@ class Home extends React.Component {
                     <i className="bx bx-file"></i>
                   </div>
                   <h4 className="title">
-                    <a href="">Sed ut perspiciatis</a>
+                    <a href="">United States</a>
                   </h4>
                   <p className="description">
                     Duis aute irure dolor in reprehenderit in voluptate velit
@@ -87,7 +87,7 @@ class Home extends React.Component {
                     <i className="bx bx-tachometer"></i>
                   </div>
                   <h4 className="title">
-                    <a href="">Magni Dolores</a>
+                    <a href="">Cannada</a>
                   </h4>
                   <p className="description">
                     Excepteur sint occaecat cupidatat non proident, sunt in
@@ -106,7 +106,7 @@ class Home extends React.Component {
                     <i className="bx bx-world"></i>
                   </div>
                   <h4 className="title">
-                    <a href="">Nemo Enim</a>
+                    <a href="">Europe</a>
                   </h4>
                   <p className="description">
                     At vero eos et accusamus et iusto odio dignissimos ducimus
