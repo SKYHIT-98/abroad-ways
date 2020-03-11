@@ -119,7 +119,7 @@ class Home extends React.Component {
         </section>
         <section>
           <div className="container">
-            <div className="row">
+            <div className="row p-5">
               <div className="col-12">
                 <div className="section-heading text-center">
                   <h2>Latest News</h2>
@@ -141,8 +141,8 @@ class Home extends React.Component {
                     animationName: "fadeInUp"
                   }}
                 >
-                  <img src="img/blog-img/blog-1.jpg" alt="" />
-                  <div className="blog-content">
+                  <img width="300"  src="https://images.unsplash.com/photo-1490623970972-ae8bb3da443e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1049&q=80" alt="" />
+                  <div className="blog-content my-3">
                     <h5>
                       <a href="static-page.html">We Create Experiences</a>
                     </h5>
@@ -157,8 +157,8 @@ class Home extends React.Component {
 
               <div className="col-12 col-md-4">
                 <div className="single-blog-area wow fadeInUp" data-wow-delay="1s">
-                  <img src="img/blog-img/blog-2.jpg" alt="" />
-                  <div className="blog-content">
+                  <img width="300" src="https://images.unsplash.com/photo-1529180184525-78f99adb8e98?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80" alt="" />
+                  <div className="blog-content my-3">
                     <h5>
                       <a href="static-page.html">Simple, Fast And Fun</a>
                     </h5>
@@ -176,8 +176,8 @@ class Home extends React.Component {
                   className="single-blog-area wow fadeInUp"
                   data-wow-delay="1.5s"
                 >
-                  <img src="img/blog-img/blog-3.jpg" alt="" />
-                  <div className="blog-content">
+                  <img width="300" src="https://images.unsplash.com/photo-1506973035872-a4ec16b8e8d9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80" alt="" />
+                  <div className="blog-content my-3">
                     <h5>
                       <a href="static-page.html">Device Friendly</a>
                     </h5>
