@@ -1,11 +1,26 @@
 import React, { Fragment } from "react";
 import Logo from "../assets/img/logo.png";
-import Modal from "react-modal";
 import ContactForm from "../Components/ContactForm";
 import IconButton from "@material-ui/core/IconButton";
 import Menu from "@material-ui/core/Menu";
 import MenuItem from "@material-ui/core/MenuItem";
-import MoreVertIcon from "@material-ui/icons/MoreVert";
+import MenuIcon from '@material-ui/icons/Menu';
+import { makeStyles } from '@material-ui/core/styles';
+import Modal from '@material-ui/core/Modal';
+import Backdrop from '@material-ui/core/Backdrop';
+import Fade from '@material-ui/core/Fade';
+
+const useStyles = makeStyles(theme => ({
+  modal: {
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+  paper: {
+   
+    boxShadow: theme.shadows[5],
+  },
+}));
 
 const options = [
   { name: "Home", link: "/" },
@@ -18,25 +33,25 @@ const options = [
 const ITEM_HEIGHT = 48;
 
 export default function App() {
-  Modal.setAppElement("#root");
 
-  var subtitle;
-  const [modalIsOpen, setIsOpen] = React.useState(false);
-  function openModal() {
-    setIsOpen(true);
-  }
+  const classes = useStyles();
+  const [open, setOpen] = React.useState(false);
 
-  function closeModal() {
-    setIsOpen(false);
-  }
+  const handleOpen = () => {
+    setOpen(true);
+  };
+
+  const handleClose = () => {
+    setOpen(false);
+  };
   const [anchorEl, setAnchorEl] = React.useState(null);
-  const open = Boolean(anchorEl);
+  const openM = Boolean(anchorEl);
 
   const handleClick = event => {
     setAnchorEl(event.currentTarget);
   };
 
-  const handleClose = () => {
+  const handleCloseM = () => {
     setAnchorEl(null);
   };
 
@@ -55,17 +70,17 @@ export default function App() {
           onClick={handleClick}
           className="d-lg-none"
         >
-          <MoreVertIcon />
+          <MenuIcon />
         </IconButton>
         <Menu
           id="long-menu"
           anchorEl={anchorEl}
           keepMounted
-          open={open}
-          onClose={handleClose}
+          open={openM}
+          onClose={handleCloseM}
           PaperProps={{
             style: {
-              maxHeight: ITEM_HEIGHT * 4.5,
+              maxHeight: ITEM_HEIGHT * 10,
               width: 200
             }
           }}
@@ -77,7 +92,6 @@ export default function App() {
               selected={option === "Home"}
             >
               <ul>
-                {" "}
                 <li className="active">
                   <a href={option.link}>{option.name}</a>
                 </li>
@@ -108,12 +122,43 @@ export default function App() {
             </li>
 
             <li className="get-started pointer">
-              <a onClick={openModal}>Get Started</a>
+              <a onClick={handleOpen}>Get Started</a>
             </li>
           </ul>
         </nav>
       </div>
       <Modal
+        aria-labelledby="transition-modal-title"
+        aria-describedby="transition-modal-description"
+        className={classes.modal}
+        open={open}
+        onClose={handleClose}
+        closeAfterTransition
+        BackdropComponent={Backdrop}
+        BackdropProps={{
+          timeout: 500,
+        }}
+      >
+        <Fade in={open}>
+          <div className={classes.paper}>
+          <ContactForm
+          // style={{
+          //   top: "50%",
+          //   left: "50%",
+          //   right: "auto",
+          //   bottom: "auto",
+          //   marginRight: "-50%",
+          //   marginTop: "50%",
+          //   marginLeft: "50%",
+          //   transform: "translate(-50%, -50%)",
+          //   boxShadow: "0px 8px 20px 0px rgba(0, 0, 0, 0.25)",
+          //   border: 0
+          // }}
+        />
+          </div>
+        </Fade>
+      </Modal>
+      {/* <Modal
         isOpen={modalIsOpen}
         onRequestClose={closeModal}
         contentLabel="Example Modal"
@@ -121,8 +166,8 @@ export default function App() {
       >
         <ContactForm
           style={{
-            top: "100%",
-            left: "100%",
+            top: "50%",
+            left: "50%",
             right: "auto",
             bottom: "auto",
             marginRight: "-50%",
@@ -133,7 +178,7 @@ export default function App() {
             border: 0
           }}
         />
-      </Modal>
+      </Modal> */}
     </header>
   );
 }

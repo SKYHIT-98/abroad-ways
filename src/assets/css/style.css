@@ -66,6 +66,7 @@ body {
 	}
   }
   
+
   /*--------------------------------------------------------------
   # Header
   --------------------------------------------------------------*/
@@ -549,7 +550,7 @@ body {
 	background: #fff;
 	box-shadow: 0 10px 29px 0 rgba(68, 88, 144, 0.1);
 	transition: all 0.3s ease-in-out;
-	border-radius: 15px;
+	border-radius: 10px;
 	text-align: center;
 	border-bottom: 3px solid #fff;
   }
@@ -557,7 +558,13 @@ body {
   .services .icon-box:hover {
 	transform: translateY(-5px);
 	border-color: #ef7f4d;
+	background-image: none !important;
+	background-color: #ef7f4d !important;
+	transition: all 0.5s ease-in-out;
+	color: white !important;
   }
+
+
   
   .services .icon-box img {
 	font-size: 48px;
@@ -578,6 +585,18 @@ body {
   
   .services .title a {
 	color: #111;
+	
+  }
+  .services .title-custom a{
+	color: #fff;
+	font-weight: 400;
+	padding: 10px;
+	font-size: 22px;
+  }
+
+  .services .title-custom {
+	  margin-top: 120px;
+	  background-color: rgba(0, 0, 0, 0.4);
   }
   
   .services .description {

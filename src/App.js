@@ -5,12 +5,13 @@ import Home from "./Views/Home";
 import Contact from "./Views/Contact";
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import './assets/css/style.css';
-import './assets/css/style.js';
+import './assets/css/style2.css';
 
 import Coaching from "./Views/Coaching";
 import Visa from './Views/Visa';
 import JobSeeker from "./Views/Visa/JobSeeker";
 import Country from './Views/Country';
+import AboutUs from './Views/AboutUs'
 
 export default function App() {
   return (
@@ -19,7 +20,7 @@ export default function App() {
       <Router>
         <main>
           <Route path="/" exact component={Home} />
-          <Route path="/about" />
+          <Route path="/about" component={AboutUs}/>
           <Route path="/contact" component={Contact} />
           <Route path="/coaching" component={Coaching} />
           <Route exact path="/visa" component={Visa} />

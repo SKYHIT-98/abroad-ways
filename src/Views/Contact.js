@@ -32,7 +32,7 @@ export default class Contact extends Component {
                   <h4>Call:</h4>
                   <p>+91 88168 88162</p>
                 </div>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3455.8120342242564!2d76.58219701547137!3d29.984831481904013!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390e25afc37b30df%3A0x8cb2f77a3f84c5ef!2sManav%20I%20Tech%20-%20IELTS%2C%20PTE%2C%20Spoken%20English%2C%20HKCL%20Centre!5e0!3m2!1sen!2sin!4v1582740655897!5m2!1sen!2sin" width="100%" height="450" frameborder="0" style={{border:0}} allowfullscreen=""></iframe>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13823.252338429404!2d76.5844555!3d29.9848013!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xf0e32d96421345c5!2sAbroad%20Way!5e0!3m2!1sen!2sin!4v1584177440973!5m2!1sen!2sin" width="100%" height="450" frameborder="0" style={{border:0}} allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
               </div>
             </div>
 
