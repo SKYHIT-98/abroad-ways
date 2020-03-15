@@ -4,7 +4,7 @@ import React, { Component } from "react";
 export default class Contact extends Component {
   render() {
     return (
-      <section id="contact" className="contact">
+      <section id="contact" className="contact mt-5">
         <div className="container">
           <div className="section-title aos-init aos-animate" data-aos="fade-up">
             <h2>Contact Us</h2>

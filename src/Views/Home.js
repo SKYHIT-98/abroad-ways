@@ -161,7 +161,7 @@ class Home extends React.Component {
 			 				<div class="about-2-txt pc-20 mb-40">
 
 
-					 			<h2 class="section-id id-color">About Agency</h2>
+					 			<h2 class="section-id id-color">About Us</h2>
 
 								<span class="span-lg darkblue-color">Consultations for prospective immigrants</span>
         <br /><br/>

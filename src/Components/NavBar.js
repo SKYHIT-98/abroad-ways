@@ -28,7 +28,7 @@ const options = [
   { name: "Country", link: "/country" },
   { name: "Visa", link: "/visa" },
   { name: "About Us", link: "/about" },
-  { name: "ContactUs", link: "/contactUs" }
+  { name: "Contact Us", link: "/contactUs" }
 ];
 const ITEM_HEIGHT = 48;
 
