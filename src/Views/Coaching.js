@@ -233,23 +233,7 @@ Explore Abroad way TOEFL Coaching      </Typography>
                   <p className="description"></p>
                 </div>
               </div>
-              <div
-                className="col-md-6 col-lg-2 d-flex align-items-stretch aos-init aos-animate pointer "
-                data-aos="zoom-in"
-                data-aos-delay="100"
-              >
-                <div className="icon-box">
-                  <LiveTvIcon style={{ fontSize: 80 }} />
-                  <h4 className="title-custom">
-                    <a href="">
-                      LIVE
-                      <br />
-                      CLASSROOM
-                    </a>
-                  </h4>
-                  <p className="description"></p>
-                </div>
-              </div>{" "}
+            
               <div
                 className="col-md-6 col-lg-2 d-flex align-items-stretch aos-init aos-animate pointer "
                 data-aos="zoom-in"
