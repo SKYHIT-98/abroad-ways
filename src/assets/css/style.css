@@ -531,6 +531,11 @@ body {
 	  max-width: 90%;
 	}
   }
+
+  #hero{
+	  background-image: url(../img/banner_img.png);
+	  background-position: top;
+background-size: 100% 150%;  }
   
   /*--------------------------------------------------------------
   # Services
@@ -551,6 +556,50 @@ body {
   }
   
   .services .icon-box:hover {
+	transform: translateY(-5px);
+	background-image: #000 !important;
+	transition: all 0.5s ease-in-out;
+	color: #000 !important;
+	box-shadow: 0 10px 29px 0 rgba(68, 88, 144, 0.1);
+
+  }
+
+  .services .icon-box-home-coaching {
+	padding: 20px 20px;
+	position: relative;
+	overflow: hidden;
+	margin: 0  0 40px 0;
+	background: #fff;
+	transition: all 0.3s ease-in-out;
+	border-radius: 10px;
+	text-align: center;
+	width: 100%;
+	color: #000;
+	height: 400px;
+  }
+  
+  .services .icon-box-home-coaching:hover {
+	transition: all 0.5s ease-in-out;
+	color: #000 !important;
+	box-shadow: 0 8px 20px 0 rgba(68, 88, 144, 0.5);
+
+  }
+
+  .services .icon-box-home {
+	padding: 20px 20px;
+	position: relative;
+	overflow: hidden;
+	margin: 0  0 40px 0;
+	background: #fff;
+	transition: all 0.3s ease-in-out;
+	border-radius: 10px;
+	text-align: center;
+	border-bottom: 3px solid #fff;
+	width: 100%;
+	color: #000;
+  }
+  
+  .services .icon-box-home:hover {
 	transform: translateY(-5px);
 	background-image: none !important;
 	transition: all 0.5s ease-in-out;
@@ -590,6 +639,10 @@ body {
 	font-size: 18px;
   }
   
+  .services .title-home-coaching {
+	font-weight: 700;
+	margin-bottom: 15px;
+  }
   .services .title a {
 	color: #111;
 	
@@ -1349,6 +1402,9 @@ body {
     background-size: cover !important;
 	background: #2971ac;
 	height: 500px !important;
+}
+.hero-banner-sm{
+	height: 510px !important;
 }
 
 .page-title {

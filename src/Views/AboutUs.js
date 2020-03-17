@@ -3,7 +3,8 @@ import React from 'react'
 export default function AboutUs() {
     return (
         <section className="mt-3">
-            <section className="hero-banner-sm magic-ball magic-ball-banner" id="parallax-1" data-anchor-target="#parallax-1" data-300-top="background-position: 0px -80px" data-top-bottom="background-position: 0 100px">
+            <section className="hero-banner-sm magic-ball magic-ball-banner" id="parallax-1" >
+              <div className="overlay"></div>
                 <div className="container">
                     <div className="hero-banner-sm-content">
                         <h1>Packages</h1>

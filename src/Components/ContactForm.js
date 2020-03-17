@@ -12,7 +12,7 @@ class ContactForm extends Component {
         return (
             <div style={this.props.style} class="card">
                 <div class="card-body">
-                    <h2 class="title">Registration Form</h2>
+                    <h2 class="title">ENQUIRE NOW</h2>
                     <form method="POST">
                         <div class="row row-space">
                             <div class="col-12">
