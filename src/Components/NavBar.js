@@ -101,7 +101,7 @@ export default function App() {
     </Menu>
         <nav className="nav-menu d-none d-lg-block">
           <ul>
-            <li className="active">
+            <li>
               <a href="/">Home</a>
             </li>
 

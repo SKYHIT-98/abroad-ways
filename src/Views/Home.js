@@ -10,7 +10,7 @@ class Home extends React.Component {
         <section id="hero" className="d-flex align-items-center" style={{backgroundImage: "url(https://images.unsplash.com/photo-1484830020404-9ce1fd56fdf9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1797&q=80)"}}>
           <div className="container">
             <div className="row">
-              <div className="col-lg-6 pt-5 pt-lg-0 order-2 order-lg-1">
+              <div className="col-lg-6 mt-5 mt-lg-0 order-2 order-lg-1">
                 <h1>Dream of studying abroad?</h1>
                 <h2 style={{color: "white"}}>
                   IELTS | PTE | SPOKEN ENGLISH | STUDY VISA | TOURIST VISA |
@@ -26,8 +26,8 @@ class Home extends React.Component {
             </div>
           </div>
         </section>
-        <section id="services" className="services">
-          <div className="container my-4">
+        <section id="services" className="services my-5">
+          <div className="container">
             <div
               className="section-title aos-init aos-animate"
               data-aos="fade-up"
@@ -148,7 +148,7 @@ class Home extends React.Component {
 
 			 			<div class="col-md-6">
 			 				<div class="about-img text-center mb-40">
-                <img width="400"  class="img-fluid" src="https://images.unsplash.com/photo-1453396450673-3fe83d2db2c4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80" style={{boxShadow: "14px 18px 41px -22px rgba(0,0,0,0.82)", borderRadius: 5}} alt="about-image"/>
+                <img width="350"  class="img-fluid" src="https://images.unsplash.com/photo-1453396450673-3fe83d2db2c4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80" style={{boxShadow: "14px 18px 41px -22px rgba(0,0,0,0.82)", borderRadius: 5}} alt="about-image"/>
 								
 
 								
@@ -319,7 +319,7 @@ class Home extends React.Component {
                   }}
                 >
                   <img
-                    width="300"
+                    width="100%"
                     src="https://images.unsplash.com/photo-1490623970972-ae8bb3da443e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1049&q=80"
                     alt=""
                   />
@@ -342,7 +342,7 @@ class Home extends React.Component {
                   data-wow-delay="1s"
                 >
                   <img
-                    width="300"
+                    width="100%"
                     src="https://images.unsplash.com/photo-1529180184525-78f99adb8e98?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80"
                     alt=""
                   />
@@ -365,7 +365,7 @@ class Home extends React.Component {
                   data-wow-delay="1.5s"
                 >
                   <img
-                    width="300"
+                    width="100%"
                     src="https://images.unsplash.com/photo-1506973035872-a4ec16b8e8d9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80"
                     alt=""
                   />

@@ -12,15 +12,9 @@ body {
 	font-family: 'Karla', ;
 	color: #212529;
   }
+
   
-  a {
-	color: #007bff;
-  }
-  
-  a:hover {
-	color: #0b6bd3;
-	text-decoration: none;
-  }
+
   
   h1, h2, h3, h4, h5, h6, .font-primary {
 	font-family: 'Karla', ;
@@ -128,6 +122,7 @@ body {
 	transition: 0.3s;
 	font-size: 15px;
 	font-family: 'Karla', ;
+	font-weight: 600;
 }
   
   .nav-menu a:hover, .nav-menu .active > a, .nav-menu li:hover > a {
@@ -348,7 +343,6 @@ body {
   --------------------------------------------------------------*/
   #hero {
 	width: 100%;
-	height: 70vh;
 	background: #fef8f5;
 	border-bottom: 2px solid #fcebe3;
 	margin: 72px 0 -72px 0;
@@ -401,9 +395,7 @@ body {
   }
   
   @media (max-width: 991px) {
-	#hero {
-	  height: calc(100vh - 72px);
-	}
+	
 	#hero .animated {
 	  -webkit-animation: none;
 	  animation: none;
@@ -459,7 +451,7 @@ body {
   # Sections General
   --------------------------------------------------------------*/
   section {
-	padding: 60px 0;
+	padding: 10px 0;
   }
   
   .section-bg {
@@ -475,7 +467,6 @@ body {
 	font-size: 24px;
 	font-weight: 700;
 	padding-bottom: 0;
-	line-height: 1px;
 	margin-bottom: 15px;
 	color: #c2b7b1;
   }
@@ -550,23 +541,35 @@ body {
 	overflow: hidden;
 	margin: 0  0 40px 0;
 	background: #fff;
-	box-shadow: 0 10px 29px 0 rgba(68, 88, 144, 0.1);
 	transition: all 0.3s ease-in-out;
 	border-radius: 10px;
 	text-align: center;
 	border-bottom: 3px solid #fff;
+	width: 100%;
+	color: #000;
+	height: 400px;
   }
   
   .services .icon-box:hover {
 	transform: translateY(-5px);
-	border-color: #ef7f4d;
 	background-image: none !important;
-	background-color: #ef7f4d !important;
 	transition: all 0.5s ease-in-out;
-	color: white !important;
+	color: #000 !important;
+	box-shadow: 0 10px 29px 0 rgba(68, 88, 144, 0.1);
+
+  }
+  .coaching-card{
+	min-width: 160px;
+    margin: 20px;
+    width: 340px;
+    cursor: pointer
   }
 
+.coaching-card:hover{
+	transition: all 0.5s ease-in-out;
+	box-shadow: 0 8px 20px 0 rgba(68, 88, 144, 0.1);
 
+}
   
   .services .icon-box img {
 	font-size: 48px;
@@ -574,7 +577,9 @@ body {
 	margin-bottom: 15px;
 	color: #ef7f4d;
 	border-radius: 10px;
-	box-shadow: 0 10px 29px 0 rgba(68, 88, 144, 0.3);
+	height: 200px;
+	width: 100%;
+	/* box-shadow: 0 10px 29px 0 rgba(68, 88, 144, 0.3); */
 
 	
   }
@@ -619,8 +624,9 @@ body {
 	border-radius: 10px;
 	text-align: center;
 	border-bottom: 3px solid #fff;
-	width: 160px
-  }
+	width: 160px;
+	width: 100%;
+}
   
   .services-coach .icon-box:hover {
 	transform: translateY(-5px);
@@ -648,7 +654,7 @@ body {
   
 
   .services-coach .title-custom a{
-	color: #111;
+	color: #565661;
 	font-weight: 700;
 	font-size: 12px;
   }
@@ -1341,14 +1347,15 @@ body {
     margin: 0px;
     border-bottom: transparent;
     background-size: cover !important;
-    background: #2971ac;
+	background: #2971ac;
+	height: 500px !important;
 }
 
 .page-title {
     font-size: 38px;
-    color: #000;
+    color: #fff;
     margin-bottom: 20px;
-    font-weight: 400;
+    font-weight: 700;
     padding-bottom: 20px;
     border-bottom: 1px dotted #000;
     display: inline-block;
@@ -1358,7 +1365,16 @@ body {
     font-size: 38px;
     color: #fff;
     margin-bottom: 20px;
-    font-weight: 400;
+    font-weight: 700;
+    padding-bottom: 20px;
+    border-bottom: 1px dotted #fff;
+    display: inline-block;
+}
+.coaching-page-title {
+    font-size: 100px;
+    color: #f1f1f1;
+    margin-bottom: 20px;
+    font-weight: 700;
     padding-bottom: 20px;
     border-bottom: 1px dotted #fff;
     display: inline-block;
@@ -1439,8 +1455,42 @@ body {
 
 }
 
+
+.service-box-flag {
+    margin-bottom: 40px;
+    background: #fff;
+    text-align: center;
+    padding: 15px 15px 15px 15px;
+    border: 1px solid transparent;
+    -webkit-transition: all .3s ease 0s;
+    -o-transition: all .3s ease 0s;
+    transition: all .3s ease 0s;
+    border-radius: 10px;
+    -webkit-box-shadow: 0px 2px 6px rgba(0,0,0,0.3);
+	box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.25);
+}
+
+.service-box-flag:hover{
+	box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.25);
+	transition: all 0.3s ease-in-out;
+}
+
+.service-box-flag .service-img-icon .service-icon-flag {
+	width: 300px;
+	height: 150px;
+    text-align: center;
+    background: #fff;
+    margin: 0 auto;
+	margin-bottom: 20px;
+	border-radius: 10px;
+    border: 1px solid rgba(255,255,255,.2);
+	color: #fff;
+	/* box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.25); */
+
+}
 .service-inner h4 {
-    margin-bottom: 20px;
+	margin-bottom: 20px;
+	font-weight: 700;
 }
 h4 {
     font-size: 22px;
@@ -1455,3 +1505,16 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
 
 .pointer {cursor: pointer;}
 
+a{
+	color: #ef7f4d
+}
+
+.overlay{
+	margin-top: 10px;
+	background-color: rgba(51, 51, 51, 0.5);
+	position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 500px;
+}

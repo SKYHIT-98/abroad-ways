@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import Flag from '../assets/img/us.jpg';
 
 class CountryCard extends Component {
     constructor(props) {
@@ -10,14 +9,14 @@ class CountryCard extends Component {
     }
     render() {
         return (
-            <div class="col-lg-4 col-sm-6 col-md-6">
-                    <div class="service-box">
+            <div class="col-lg-4 col-sm-6 col-md-6" style={{cursor: "pointer"}}>
+                    <div class="service-box" style={{backgroundImage: "url(../../assets/img/flags/uae.png)"}}>
                         <div class="service-img-icon">
-                            <img src={Flag} alt="service-icon " class="img-fluid service-icon " />
+                            <img src="../../assets/img/flags/uae.png" alt="service-icon " class="img-fluid service-icon " />
                         </div>
                         <div class="service-inner">
-                            <h4>America</h4>
-                            <p>Reach a huge area of users and get a publicty of your product and service ,<span>video marketing</span> solution.</p>
+        <h4>{this.props.country}</h4>
+        <p>{this.props.detail}</p>
                         </div>
                     </div>
                 </div>

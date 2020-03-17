@@ -14,15 +14,17 @@ class Card extends Component {
             data-aos="zoom-in"
             data-aos-delay="300"
           >
+            <a href="/visa/jobseeker">
             <div className="icon-box">
-            <img src={Background} class="img-fluid" alt=""></img>
+            <img src={this.props.img} class="img-fluid" alt=""></img>
               <h4 className="title">
-        <a href="/visa/jobseeker">{this.props.title}</a>
+        <a>{this.props.title}</a>
               </h4>
               <p className="description">
               {this.props.desc}
               </p>
             </div>
+            </a>
           </div>
         );
     }
