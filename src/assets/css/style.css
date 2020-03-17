@@ -610,13 +610,14 @@ background-size: 100% 150%;  }
   .coaching-card{
 	min-width: 160px;
     margin: 20px;
-    width: 340px;
-    cursor: pointer
+    width: 100%;
+	cursor: pointer
+	
   }
 
 .coaching-card:hover{
 	transition: all 0.5s ease-in-out;
-	box-shadow: 0 8px 20px 0 rgba(68, 88, 144, 0.1);
+	box-shadow: 0 8px 20px 0 rgba(68, 88, 144, 0.5);
 
 }
   
@@ -631,6 +632,10 @@ background-size: 100% 150%;  }
 	/* box-shadow: 0 10px 29px 0 rgba(68, 88, 144, 0.3); */
 
 	
+  }
+
+  .box-coaching-home{
+	  width: 100%;
   }
   
   .services .title {

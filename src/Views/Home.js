@@ -50,7 +50,7 @@ class Home extends React.Component {
                 data-aos="zoom-in"
                 data-aos-delay="100"
               >
-                <a href="/coaching/GRE">
+                <a className="box-coaching-home" href="/coaching/GRE">
                 <div
                   className="icon-box-home-coaching"
                   style={{backgroundColor:"#f1f1f1", width: 360, height: 200 }}
@@ -73,7 +73,7 @@ class Home extends React.Component {
                 data-aos="zoom-in"
                 data-aos-delay="100"
               >
-                                <a href="/coaching/IELTS">
+                                <a className="box-coaching-home" href="/coaching/IELTS">
 
                 <div
                   className="icon-box-home-coaching"
@@ -96,7 +96,7 @@ class Home extends React.Component {
                 data-aos="zoom-in"
                 data-aos-delay="100"
               >
-                                <a href="/coaching/GMAT">
+                                <a className="box-coaching-home" href="/coaching/GMAT">
 
                 <div
                   className="icon-box-home-coaching"
@@ -119,7 +119,7 @@ class Home extends React.Component {
                 data-aos="zoom-in"
                 data-aos-delay="100"
               >
-                                <a href="/coaching/SAT">
+                                <a className="box-coaching-home" href="/coaching/SAT">
 
                 <div
                   className="icon-box-home-coaching"
@@ -142,7 +142,7 @@ class Home extends React.Component {
                 data-aos="zoom-in"
                 data-aos-delay="100"
               >
-                                <a href="/coaching/PTE">
+                                <a className="box-coaching-home" href="/coaching/PTE">
 
                 <div
                   className="icon-box-home-coaching"
@@ -164,7 +164,7 @@ class Home extends React.Component {
                 data-aos="zoom-in"
                 data-aos-delay="100"
               >
-                                <a href="/coaching/TOEFL">
+                                <a className="box-coaching-home" href="/coaching/TOEFL">
 
                 <div
                   className="icon-box-home-coaching"
